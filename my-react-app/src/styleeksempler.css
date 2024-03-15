@@ -1,0 +1,81 @@
+.container {
+  
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.tab {
+  width: 20%;  
+  background-color: #2a2a2a;
+  color: white;
+  padding: 20px;
+  text-align: center; 
+  flex-grow: 1;
+}
+
+.active {
+  background-color: #4a4a4a; /* aktiv tab farge */
+}
+
+.content {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  padding: 5px 0;
+}
+
+.links a {
+  color: #0000EE; /* standard lenkefarge */
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+:before, after {
+  box-sizing: border-box;
+}
+
+/* For nettbrett */
+@media (max-width: 768px) {
+  .tab {
+    width: 25%; /* eller flex-basis: 25%; hvis du bruker flex-grow */
+    padding: 15px; /* reduser padding for mindre skjermer */
+  }
+  
+  /* Her kan du også endre skriftstørrelser, marginer osv. om nødvendig */
+}
+
+/* For mobiltelefoner i stående orientering */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column; /* stable fanene vertikalt */
+  }
+
+  .tab {
+    width: 100%; /* hver fane tar hele bredden */
+    padding: 10px; /* ytterligere reduser padding */
+  }
+
+  /* Tilpasse tekststørrelser og andre elementer for små skjermer */
+}
+
+/* Du kan også ha et bruddpunkt for store skjermer */
+@media (min-width: 1900px) {
+  .tab {
+    width: auto; /* tilbakestill bredde for større skjermer */
+    padding: 20px; /* øk padding for større plass */
+  }
+
+  /* Eventuelle tillegg for større skjermer, som større skriftstørrelser eller større avstander */
+}

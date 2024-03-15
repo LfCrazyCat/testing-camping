@@ -1,0 +1,139 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #E1E5EE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+nav {
+  width: 100%;
+  background-color: #E1E5EE;
+  position: relative;
+  margin: 0;
+  margin-left: 0; /* DENNE ER ENDRET */
+  margin-right: 0; /* DENNA ER ENDRET */
+  /* width: 832px; */ /* DEBNE ER ENDRET */ /*För att matcha bredden på section inklusive padding*/
+  box-sizing: border-box; /* DEBNE ER ENDRET */
+  display: flex; /* DEBNE ER ENDRET */
+  justify-content: space-between; /* DEBNE ER ENDRET*/
+}
+
+
+/* DESIGN FOR NAVBAR */
+
+nav {
+  padding: 0;
+}
+span {
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20em;
+  display: flex;
+}
+
+
+nav ul li a {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  padding: 0 1em;
+  color: #fff;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #2A324B;
+  text-align: center;
+  font-weight: 900;
+  font-size: 18px; /* DEBNE ER ENDRET*/
+}
+
+
+nav ul li a:focus { /* DEBNE ER ENDRET */
+  background-color: #fff;
+  color: black;
+}
+
+/* DESIGN FOR NAVBAR FERDIG */
+
+/*  HOVEDINNHOLD */
+main {
+  background-color: #E1E5EE;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* HOVEDINNHOLD AVSLUTTER */
+
+
+/* DESIGN FOR SECTION */
+section {
+  width: 800px; /* DEBNE ER ENDRET */
+  margin: 0em;
+  /* kan sløyfes */
+  padding: 1em;
+  background-color: #fff;
+}
+
+section h1 {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+section p {
+  /* Design for tekst paragrafer */
+  font-weight: 700;
+
+  /* font-size: 19px; / / Usikker på font-size som ønskes, lar være å skrive inn */
+}
+
+section ul li {
+  display: list-item;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+/* DESIGN FOR SECTION FERDIG */
+
+
+
+
+
+
+/* MEDIA QURIES */
+@media only screen and (min-width: 600px) {
+
+  nav {
+    justify-content: center;
+  }
+
+
+  nav li {
+    margin-right: 35px;
+  }
+
+  section {
+    display: block;
+  }
+}
